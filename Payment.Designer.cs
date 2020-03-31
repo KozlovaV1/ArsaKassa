@@ -48,7 +48,16 @@
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonClearAll = new System.Windows.Forms.Button();
             this.buttonDelOne = new System.Windows.Forms.Button();
+            this.textBoxSumRMK = new System.Windows.Forms.TextBox();
+            this.textBoxGetSum = new System.Windows.Forms.TextBox();
+            this.textBoxChange = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panelNumbers.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonPay
@@ -98,6 +107,7 @@
             this.buttonNom1.TabIndex = 2;
             this.buttonNom1.Text = "1";
             this.buttonNom1.UseVisualStyleBackColor = true;
+            this.buttonNom1.Click += new System.EventHandler(this.buttonNom1_Click);
             // 
             // buttonNom2
             // 
@@ -108,6 +118,7 @@
             this.buttonNom2.TabIndex = 3;
             this.buttonNom2.Text = "2";
             this.buttonNom2.UseVisualStyleBackColor = true;
+            this.buttonNom2.Click += new System.EventHandler(this.buttonNom2_Click);
             // 
             // buttonNom3
             // 
@@ -118,6 +129,7 @@
             this.buttonNom3.TabIndex = 4;
             this.buttonNom3.Text = "3";
             this.buttonNom3.UseVisualStyleBackColor = true;
+            this.buttonNom3.Click += new System.EventHandler(this.buttonNom3_Click);
             // 
             // buttonNom4
             // 
@@ -128,6 +140,7 @@
             this.buttonNom4.TabIndex = 5;
             this.buttonNom4.Text = "4";
             this.buttonNom4.UseVisualStyleBackColor = true;
+            this.buttonNom4.Click += new System.EventHandler(this.buttonNom4_Click);
             // 
             // buttonNom5
             // 
@@ -138,6 +151,7 @@
             this.buttonNom5.TabIndex = 6;
             this.buttonNom5.Text = "5";
             this.buttonNom5.UseVisualStyleBackColor = true;
+            this.buttonNom5.Click += new System.EventHandler(this.buttonNom5_Click);
             // 
             // buttonNom6
             // 
@@ -148,6 +162,7 @@
             this.buttonNom6.TabIndex = 7;
             this.buttonNom6.Text = "6";
             this.buttonNom6.UseVisualStyleBackColor = true;
+            this.buttonNom6.Click += new System.EventHandler(this.buttonNom6_Click);
             // 
             // buttonNom7
             // 
@@ -158,6 +173,7 @@
             this.buttonNom7.TabIndex = 8;
             this.buttonNom7.Text = "7";
             this.buttonNom7.UseVisualStyleBackColor = true;
+            this.buttonNom7.Click += new System.EventHandler(this.buttonNom7_Click);
             // 
             // buttonNom8
             // 
@@ -168,6 +184,7 @@
             this.buttonNom8.TabIndex = 9;
             this.buttonNom8.Text = "8";
             this.buttonNom8.UseVisualStyleBackColor = true;
+            this.buttonNom8.Click += new System.EventHandler(this.buttonNom8_Click);
             // 
             // buttonNom9
             // 
@@ -178,6 +195,7 @@
             this.buttonNom9.TabIndex = 10;
             this.buttonNom9.Text = "9";
             this.buttonNom9.UseVisualStyleBackColor = true;
+            this.buttonNom9.Click += new System.EventHandler(this.buttonNom9_Click);
             // 
             // buttonNom0
             // 
@@ -188,9 +206,11 @@
             this.buttonNom0.TabIndex = 11;
             this.buttonNom0.Text = "0";
             this.buttonNom0.UseVisualStyleBackColor = true;
+            this.buttonNom0.Click += new System.EventHandler(this.buttonNom0_Click);
             // 
             // buttonNomPoint
             // 
+            this.buttonNomPoint.Enabled = false;
             this.buttonNomPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.13497F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonNomPoint.Location = new System.Drawing.Point(109, 277);
             this.buttonNomPoint.Name = "buttonNomPoint";
@@ -198,6 +218,7 @@
             this.buttonNomPoint.TabIndex = 12;
             this.buttonNomPoint.Text = ".";
             this.buttonNomPoint.UseVisualStyleBackColor = true;
+            this.buttonNomPoint.Click += new System.EventHandler(this.buttonNomPoint_Click);
             // 
             // buttonNum00
             // 
@@ -208,6 +229,7 @@
             this.buttonNum00.TabIndex = 13;
             this.buttonNum00.Text = "00";
             this.buttonNum00.UseVisualStyleBackColor = true;
+            this.buttonNum00.Click += new System.EventHandler(this.buttonNum00_Click);
             // 
             // panelNumbers
             // 
@@ -259,20 +281,95 @@
             this.buttonDelOne.TabIndex = 17;
             this.buttonDelOne.Text = "<";
             this.buttonDelOne.UseVisualStyleBackColor = true;
+            this.buttonDelOne.Click += new System.EventHandler(this.buttonDelOne_Click);
+            // 
+            // textBoxSumRMK
+            // 
+            this.textBoxSumRMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.80368F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSumRMK.Location = new System.Drawing.Point(6, 27);
+            this.textBoxSumRMK.Name = "textBoxSumRMK";
+            this.textBoxSumRMK.ReadOnly = true;
+            this.textBoxSumRMK.Size = new System.Drawing.Size(556, 89);
+            this.textBoxSumRMK.TabIndex = 18;
+            this.textBoxSumRMK.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBoxGetSum
+            // 
+            this.textBoxGetSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 31.80368F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxGetSum.Location = new System.Drawing.Point(6, 27);
+            this.textBoxGetSum.Name = "textBoxGetSum";
+            this.textBoxGetSum.Size = new System.Drawing.Size(556, 89);
+            this.textBoxGetSum.TabIndex = 19;
+            this.textBoxGetSum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxGetSum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxGetSum_KeyPress);
+            // 
+            // textBoxChange
+            // 
+            this.textBoxChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.19632F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxChange.Location = new System.Drawing.Point(6, 27);
+            this.textBoxChange.Name = "textBoxChange";
+            this.textBoxChange.Size = new System.Drawing.Size(550, 110);
+            this.textBoxChange.TabIndex = 20;
+            this.textBoxChange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textBoxSumRMK);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.92638F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 15);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(571, 126);
+            this.groupBox1.TabIndex = 21;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Сумма к оплате";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.textBoxGetSum);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.92638F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 180);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(571, 124);
+            this.groupBox2.TabIndex = 22;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Полученная сумма";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBoxChange);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.92638F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox3.Location = new System.Drawing.Point(18, 324);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(571, 144);
+            this.groupBox3.TabIndex = 23;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Сдача";
             // 
             // Payment
             // 
             this.ClientSize = new System.Drawing.Size(939, 651);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonDelOne);
             this.Controls.Add(this.buttonClearAll);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.panelNumbers);
             this.Controls.Add(this.buttonVirt);
             this.Controls.Add(this.buttonCashMoney);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "Payment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Оплата";
+            this.Load += new System.EventHandler(this.Payment_Load);
             this.panelNumbers.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -299,5 +396,11 @@
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonClearAll;
         private System.Windows.Forms.Button buttonDelOne;
+        private System.Windows.Forms.TextBox textBoxSumRMK;
+        private System.Windows.Forms.TextBox textBoxGetSum;
+        private System.Windows.Forms.TextBox textBoxChange;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

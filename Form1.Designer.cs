@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.statusStripDB = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelDB = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBarLOAD = new System.Windows.Forms.ToolStripProgressBar();
@@ -62,17 +62,6 @@
             this.SKU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.barcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageСustomization = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBoxPathBaseTxt = new System.Windows.Forms.TextBox();
-            this.tabPageKKT = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.buttonInfoKKM = new System.Windows.Forms.Button();
-            this.buttonXreport = new System.Windows.Forms.Button();
-            this.buttonSale = new System.Windows.Forms.Button();
-            this.buttonCloseKKM = new System.Windows.Forms.Button();
-            this.buttonAddFptr = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonNom3 = new System.Windows.Forms.Button();
             this.buttonSales = new System.Windows.Forms.Button();
@@ -108,8 +97,6 @@
             this.contextMenuStripDelPositionRMK.SuspendLayout();
             this.tabPageTovar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPageСustomization.SuspendLayout();
-            this.tabPageKKT.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -142,8 +129,6 @@
             // 
             this.tabControlMain.Controls.Add(this.tabPageRMK);
             this.tabControlMain.Controls.Add(this.tabPageTovar);
-            this.tabControlMain.Controls.Add(this.tabPageСustomization);
-            this.tabControlMain.Controls.Add(this.tabPageKKT);
             this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlMain.Location = new System.Drawing.Point(0, 0);
             this.tabControlMain.Name = "tabControlMain";
@@ -168,14 +153,14 @@
             this.dataGridViewRMK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewRMK.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewRMK.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.13497F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewRMK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.13497F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewRMK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewRMK.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewRMK.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Idrmk,
@@ -186,25 +171,25 @@
             this.quantityRMK,
             this.sumRMK});
             this.dataGridViewRMK.ContextMenuStrip = this.contextMenuStripDelPositionRMK;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.08589F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewRMK.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.08589F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewRMK.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewRMK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewRMK.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewRMK.Name = "dataGridViewRMK";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.85276F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewRMK.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 23.85276F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewRMK.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridViewRMK.RowHeadersWidth = 70;
             this.dataGridViewRMK.RowTemplate.Height = 30;
             this.dataGridViewRMK.Size = new System.Drawing.Size(1520, 865);
@@ -434,118 +419,6 @@
             this.barcode.Name = "barcode";
             this.barcode.ReadOnly = true;
             this.barcode.Width = 170;
-            // 
-            // tabPageСustomization
-            // 
-            this.tabPageСustomization.Controls.Add(this.groupBox1);
-            this.tabPageСustomization.Controls.Add(this.panel2);
-            this.tabPageСustomization.Controls.Add(this.textBoxPathBaseTxt);
-            this.tabPageСustomization.Location = new System.Drawing.Point(4, 31);
-            this.tabPageСustomization.Name = "tabPageСustomization";
-            this.tabPageСustomization.Size = new System.Drawing.Size(1526, 871);
-            this.tabPageСustomization.TabIndex = 2;
-            this.tabPageСustomization.Text = "Настройки";
-            this.tabPageСustomization.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Location = new System.Drawing.Point(408, 159);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // panel2
-            // 
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panel2.Location = new System.Drawing.Point(91, 137);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
-            this.panel2.TabIndex = 1;
-            // 
-            // textBoxPathBaseTxt
-            // 
-            this.textBoxPathBaseTxt.Location = new System.Drawing.Point(22, 23);
-            this.textBoxPathBaseTxt.Name = "textBoxPathBaseTxt";
-            this.textBoxPathBaseTxt.Size = new System.Drawing.Size(348, 28);
-            this.textBoxPathBaseTxt.TabIndex = 0;
-            // 
-            // tabPageKKT
-            // 
-            this.tabPageKKT.Controls.Add(this.button2);
-            this.tabPageKKT.Controls.Add(this.buttonInfoKKM);
-            this.tabPageKKT.Controls.Add(this.buttonXreport);
-            this.tabPageKKT.Controls.Add(this.buttonSale);
-            this.tabPageKKT.Controls.Add(this.buttonCloseKKM);
-            this.tabPageKKT.Controls.Add(this.buttonAddFptr);
-            this.tabPageKKT.Location = new System.Drawing.Point(4, 31);
-            this.tabPageKKT.Name = "tabPageKKT";
-            this.tabPageKKT.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageKKT.Size = new System.Drawing.Size(1526, 871);
-            this.tabPageKKT.TabIndex = 3;
-            this.tabPageKKT.Text = "ККМ АТОЛ";
-            this.tabPageKKT.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(33, 358);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(240, 43);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Диагностика ОФД";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // buttonInfoKKM
-            // 
-            this.buttonInfoKKM.Location = new System.Drawing.Point(33, 289);
-            this.buttonInfoKKM.Name = "buttonInfoKKM";
-            this.buttonInfoKKM.Size = new System.Drawing.Size(240, 45);
-            this.buttonInfoKKM.TabIndex = 4;
-            this.buttonInfoKKM.Text = "Информация о ККМ";
-            this.buttonInfoKKM.UseVisualStyleBackColor = true;
-            this.buttonInfoKKM.Click += new System.EventHandler(this.buttonInfoKKM_Click);
-            // 
-            // buttonXreport
-            // 
-            this.buttonXreport.Location = new System.Drawing.Point(33, 227);
-            this.buttonXreport.Name = "buttonXreport";
-            this.buttonXreport.Size = new System.Drawing.Size(240, 39);
-            this.buttonXreport.TabIndex = 3;
-            this.buttonXreport.Text = "X-отчет";
-            this.buttonXreport.UseVisualStyleBackColor = true;
-            this.buttonXreport.Click += new System.EventHandler(this.buttonXreport_Click);
-            // 
-            // buttonSale
-            // 
-            this.buttonSale.Location = new System.Drawing.Point(29, 86);
-            this.buttonSale.Name = "buttonSale";
-            this.buttonSale.Size = new System.Drawing.Size(244, 46);
-            this.buttonSale.TabIndex = 2;
-            this.buttonSale.Text = "Продажа";
-            this.buttonSale.UseVisualStyleBackColor = true;
-            this.buttonSale.Click += new System.EventHandler(this.buttonSale_Click);
-            // 
-            // buttonCloseKKM
-            // 
-            this.buttonCloseKKM.Location = new System.Drawing.Point(33, 156);
-            this.buttonCloseKKM.Name = "buttonCloseKKM";
-            this.buttonCloseKKM.Size = new System.Drawing.Size(240, 39);
-            this.buttonCloseKKM.TabIndex = 1;
-            this.buttonCloseKKM.Text = "Закрыть смену";
-            this.buttonCloseKKM.UseVisualStyleBackColor = true;
-            this.buttonCloseKKM.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // buttonAddFptr
-            // 
-            this.buttonAddFptr.Location = new System.Drawing.Point(29, 23);
-            this.buttonAddFptr.Name = "buttonAddFptr";
-            this.buttonAddFptr.Size = new System.Drawing.Size(244, 41);
-            this.buttonAddFptr.TabIndex = 0;
-            this.buttonAddFptr.Text = "Подключить драйвер";
-            this.buttonAddFptr.UseVisualStyleBackColor = true;
-            this.buttonAddFptr.Click += new System.EventHandler(this.buttonAddFptr_Click);
             // 
             // panel1
             // 
@@ -884,9 +757,6 @@
             this.contextMenuStripDelPositionRMK.ResumeLayout(false);
             this.tabPageTovar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPageСustomization.ResumeLayout(false);
-            this.tabPageСustomization.PerformLayout();
-            this.tabPageKKT.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -912,7 +782,6 @@
         private System.Windows.Forms.Button buttonReadAll;
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TabPage tabPageСustomization;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameNomenclature;
         private System.Windows.Forms.DataGridViewTextBoxColumn SKU;
@@ -922,10 +791,7 @@
         private System.Windows.Forms.Button buttonAddBarcode;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripDelPositionRMK;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemDelPosition;
-        private System.Windows.Forms.TabPage tabPageKKT;
-        private System.Windows.Forms.Button buttonAddFptr;
         private System.Windows.Forms.Button buttonAddFromTxt;
-        private System.Windows.Forms.TextBox textBoxPathBaseTxt;
         private System.Windows.Forms.TextBox textBoxScaner;
         private System.Windows.Forms.Button buttonfind2clone;
         private System.Windows.Forms.Button buttonSetting;
@@ -949,13 +815,6 @@
         private System.Windows.Forms.Button buttonNom8;
         private System.Windows.Forms.Button buttonNom6;
         private System.Windows.Forms.Button buttonNom7;
-        private System.Windows.Forms.Button buttonCloseKKM;
-        private System.Windows.Forms.Button buttonSale;
-        private System.Windows.Forms.Button buttonXreport;
-        private System.Windows.Forms.Button buttonInfoKKM;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox textBoxSumRMK;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
